@@ -17,6 +17,4 @@ conda env create -f environment.yml（环境所需依赖库很少，也可自行
 python app.py
 等待模型初始化后进入http://127.0.0.1即可使用项目工具。
 
-#工具界面展示
-<img width="1920" height="913" alt="image" src="https://github.com/user-attachments/assets/ef328fc1-aec7-4682-9fea-1aaac067d2fa" />
 
