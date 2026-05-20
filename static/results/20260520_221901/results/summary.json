@@ -1,0 +1,40 @@
+{
+  "total_images": 1,
+  "total_detections": 1,
+  "overall_average_confidence": 0.9362162351608276,
+  "overall_accuracy": 93.62162351608276,
+  "results": [
+    {
+      "image_name": "0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217.png",
+      "original_size": [
+        491,
+        97
+      ],
+      "detection_count": 1,
+      "average_confidence": 0.9362162351608276,
+      "total_confidence": 0.9362162351608276,
+      "accuracy": 93.62162351608276,
+      "detections": [
+        {
+          "id": 1,
+          "class": "formula",
+          "confidence": 0.9362162351608276,
+          "bbox": [
+            891,
+            262,
+            1126,
+            360
+          ],
+          "crop_path": "20260520_221901\\results\\0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217\\cropped_objects\\0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217_preprocessed_original_1_formula_0.94.jpg",
+          "latex_formula": "\\left\\{{\\frac{2x>0}{x+1}}>{\\frac{2x-1}{3}}",
+          "latex_preview": null
+        }
+      ],
+      "result_image": "20260520_221901\\results\\0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217\\test_results\\0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217_preprocessed.jpg",
+      "preprocessed_image": "20260520_221901\\results\\0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217\\0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217_preprocessed.jpg",
+      "latex_txt_file": "20260520_221901\\results\\0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217\\latex_recognition_results_20260520_221902.txt",
+      "latex_json_file": "20260520_221901\\results\\0abd4cbc-9f5c-47d4-9d38-ebabcbcf189e_1779286741217\\filename_latex_from_txt.json"
+    }
+  ],
+  "has_errors": false
+}

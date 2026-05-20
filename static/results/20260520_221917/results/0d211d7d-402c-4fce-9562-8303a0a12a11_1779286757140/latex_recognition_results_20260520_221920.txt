@@ -1,0 +1,7 @@
+【成功】文件名：0d211d7d-402c-4fce-9562-8303a0a12a11_1779286757140_preprocessed_original_1_formula_0.89.jpg
+图片路径：cropped_objects/0d211d7d-402c-4fce-9562-8303a0a12a11_1779286757140_preprocessed_original_1_formula_0.89.jpg
+LaTeX代码：(\dot{2})\left|1-\sqrt{2}\right|+\left|\sqrt{2}-\mathcal{2}\right|-\,\frac{2}{7}\times\sqrt{\frac{49}{4}}
+
+【成功】文件名：0d211d7d-402c-4fce-9562-8303a0a12a11_1779286757140_preprocessed_original_2_formula_0.74.jpg
+图片路径：cropped_objects/0d211d7d-402c-4fce-9562-8303a0a12a11_1779286757140_preprocessed_original_2_formula_0.74.jpg
+LaTeX代码：\Im\sqrt{(-2)^{2}}+\ 3\overline{{{-27}}}\times2-\sqrt{144}

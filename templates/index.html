@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学公式识别系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>数学公式识别系统</h1>
+            <p class="subtitle">基于视觉检测模型的数学公式识别与LaTeX转换系统研究</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Panel -->
+            <div class="left-panel">
+                <!-- Upload Card -->
+                <div class="card upload-card">
+                    <div class="upload-header">
+                        <div class="header-left">
+                            <h2><i class="fas fa-upload"></i>上传图片</h2>
+                            <div class="upload-hint">
+                                支持 JPG、PNG、BMP、GIF、TIFF 格式，单张最大10MB
+                            </div>
+                        </div>
+                        <div class="upload-actions">
+                            <button class="btn btn-upload" id="uploadBtn" disabled>
+                                <i class="fas fa-rocket"></i> 开始检测
+                            </button>
+                            <button class="btn btn-clear" id="clearBtn">
+                                <i class="fas fa-trash"></i> 清空文件
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="upload-content">
+                        <div class="upload-area" id="uploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>拖放图片到这里，或点击选择文件</p>
+                            <button class="btn btn-select">
+                                <i class="fas fa-folder-open"></i> 选择图片
+                            </button>
+                            <input type="file" id="fileInput" multiple accept="image/*">
+                        </div>
+
+                        <div class="selected-files" id="selectedFiles">
+                            <div class="empty-files">
+                                <i class="fas fa-folder-open"></i>
+                                <span>暂无选择文件</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics Summary -->
+                <div class="card summary-card">
+                    <h2><i class="fas fa-chart-bar"></i>统计摘要</h2>
+                    <div class="summary-grid">
+                        <div class="stat-card" onclick="showStatDetail('images')">
+                            <div class="stat-icon"><i class="fas fa-image"></i></div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="statImages">0</div>
+                                <div class="stat-label">处理图片</div>
+                            </div>
+                        </div>
+                        <div class="stat-card" onclick="showStatDetail('detections')">
+                            <div class="stat-icon"><i class="fas fa-calculator"></i></div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="statDetections">0</div>
+                                <div class="stat-label">检测公式</div>
+                            </div>
+                        </div>
+                        <div class="stat-card" onclick="showStatDetail('confidence')">
+                            <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="statAvgConfidence">0%</div>
+                                <div class="stat-label">平均置信度</div>
+                            </div>
+                        </div>
+                        <div class="stat-card" onclick="showStatDetail('accuracy')">
+                            <div class="stat-icon"><i class="fas fa-bullseye"></i></div>
+                            <div class="stat-info">
+                                <div class="stat-value" id="statAccuracy">0%</div>
+                                <div class="stat-label">识别准确率</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel">
+                <!-- Results -->
+                <div class="card results-card">
+                    <div class="results-header">
+                        <h2><i class="fas fa-images"></i>检测结果</h2>
+                        <div class="result-count" id="resultCount">0 个结果</div>
+                    </div>
+                    <div class="image-results" id="imageResults">
+                        <div class="empty-state">
+                            <i class="fas fa-search"></i>
+                            <p>暂无检测结果</p>
+                            <p style="font-size:0.78rem;color:var(--gray-400);margin-top:0.4rem;">
+                                上传图片并开始检测后，结果将显示在这里
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- History -->
+                <div class="card history-card">
+                    <h2><i class="fas fa-history"></i>历史记录</h2>
+                    <div class="history-list" id="historyList">
+                        <div class="empty-state">
+                            <i class="fas fa-history"></i>
+                            <p>暂无历史记录</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>2026 &copy; 基于视觉检测模型的数学公式识别与 LaTeX 转换系统研究</p>
+            <p class="footer-info">技术支持：YOLO公式检测模型 + LaTeX OCR识别</p>
+        </footer>
+    </div>
+
+    <!-- Progress Modal -->
+    <div id="progressModal" class="progress-modal">
+        <div class="progress-modal-content">
+            <div class="progress-modal-header">
+                <h3><i class="fas fa-tasks"></i>处理进度</h3>
+            </div>
+            <div class="progress-modal-body">
+                <div class="progress-modal-percentage" id="modalProgressText">0%</div>
+                <div class="progress-modal-bar">
+                    <div class="progress-modal-fill" id="modalProgressFill"></div>
+                </div>
+                <div class="progress-modal-details" id="modalProgressDetails">正在初始化...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formula Detail Modal -->
+    <div id="formulaModal" class="modal"></div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <!-- Inline: Statistics detail viewer -->
+    <script>
+    function showStatDetail(type) {
+        if (!currentResults) {
+            showToast('请先处理图片', 'warning');
+            return;
+        }
+
+        let title, content, value;
+
+        switch(type) {
+            case 'images':
+                title = '处理图片统计';
+                value = document.getElementById('statImages').textContent;
+                content = `<p>本次任务共处理了 <strong>${value}</strong> 张图片。</p>
+                           <p>所有图片均已通过模型进行公式检测和识别。</p>`;
+                break;
+            case 'detections':
+                title = '公式检测统计';
+                value = document.getElementById('statDetections').textContent;
+                content = `<p>在所有图片中共检测到 <strong>${value}</strong> 个数学公式。</p>
+                           <p>每个公式都经过了准确的边界框定位和分类。</p>`;
+                break;
+            case 'confidence':
+                title = '置信度分析';
+                value = document.getElementById('statAvgConfidence').textContent;
+                content = `<p>平均检测置信度为 <strong>${value}</strong>。</p>
+                           <p>置信度反映了模型对检测结果的确定程度，数值越高表示结果越可靠。</p>`;
+                break;
+            case 'accuracy':
+                title = '准确率分析';
+                value = document.getElementById('statAccuracy').textContent;
+                content = `<p>整体识别准确率为 <strong>${value}</strong>。</p>
+                           <p>准确率综合考虑了检测和识别的全过程，反映了系统的整体性能。</p>`;
+                break;
+            default:
+                return;
+        }
+
+        const modalContent = `
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-chart-pie"></i>${title}</h3>
+                    <button class="modal-close" onclick="closeAllModals()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div style="background:var(--gray-50);padding:1.5rem;border-radius:var(--radius-lg);text-align:center;">
+                        <div style="font-size:2.5rem;font-weight:800;color:var(--primary);margin-bottom:0.75rem;">
+                            ${value}
+                        </div>
+                        <div style="color:var(--gray-700);line-height:1.6;font-size:0.92rem;">
+                            ${content}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        const modal = document.getElementById('formulaModal');
+        modal.innerHTML = modalContent;
+        modal.style.display = 'flex';
+    }
+    </script>
+</body>
+</html>

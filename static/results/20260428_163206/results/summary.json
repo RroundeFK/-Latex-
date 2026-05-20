@@ -1,0 +1,40 @@
+{
+  "total_images": 1,
+  "total_detections": 1,
+  "overall_average_confidence": 0.8880919218063354,
+  "overall_accuracy": 88.80919218063354,
+  "results": [
+    {
+      "image_name": "0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826.png",
+      "original_size": [
+        442,
+        36
+      ],
+      "detection_count": 1,
+      "average_confidence": 0.8880919218063354,
+      "total_confidence": 0.8880919218063354,
+      "accuracy": 88.80919218063354,
+      "detections": [
+        {
+          "id": 1,
+          "class": "formula",
+          "confidence": 0.8880919218063354,
+          "bbox": [
+            852,
+            291,
+            1220,
+            328
+          ],
+          "crop_path": "20260428_163206\\results\\0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826\\cropped_objects\\0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826_preprocessed_original_1_formula_0.89.jpg",
+          "latex_formula": "(\\stackrel{\\mathbb{1}}{2})^{-1}-2cos30^{\\circ}+\\sqrt{27}+(2-\\pi)^{0}=",
+          "latex_preview": null
+        }
+      ],
+      "result_image": "20260428_163206\\results\\0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826\\test_results\\0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826_preprocessed.jpg",
+      "preprocessed_image": "20260428_163206\\results\\0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826\\0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826_preprocessed.jpg",
+      "latex_txt_file": "20260428_163206\\results\\0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826\\latex_recognition_results_20260428_163208.txt",
+      "latex_json_file": "20260428_163206\\results\\0a24e9ec-53ad-420e-9cc4-1cfa08eed58f_1777365126826\\filename_latex_from_txt.json"
+    }
+  ],
+  "has_errors": false
+}

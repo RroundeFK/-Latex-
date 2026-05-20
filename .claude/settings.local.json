@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from flask import Flask; import app; print\\('Import OK'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(certutil -hashfile \"D:\\\\ocr\\\\ocr安装包与演示视频\\\\2026062931作品安装包\\\\安装包\\\\作品\\\\app.py\" MD5)"
+    ]
+  }
+}

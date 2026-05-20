@@ -1,0 +1,41 @@
+{
+  "total_images": 2,
+  "total_detections": 0,
+  "overall_average_confidence": 0.0,
+  "overall_accuracy": 0.0,
+  "results": [
+    {
+      "image_name": "00bf11a1-bfaf-4a58-afc6-6f54df8e106c_1777364797519.png",
+      "original_size": [
+        1409,
+        62
+      ],
+      "detection_count": 0,
+      "average_confidence": 0.0,
+      "total_confidence": 0.0,
+      "accuracy": 0.0,
+      "detections": [],
+      "result_image": "20260428_162637\\results\\00bf11a1-bfaf-4a58-afc6-6f54df8e106c_1777364797519\\test_results\\00bf11a1-bfaf-4a58-afc6-6f54df8e106c_1777364797519_preprocessed.jpg",
+      "preprocessed_image": "20260428_162637\\results\\00bf11a1-bfaf-4a58-afc6-6f54df8e106c_1777364797519\\00bf11a1-bfaf-4a58-afc6-6f54df8e106c_1777364797519_preprocessed.jpg",
+      "latex_txt_file": "20260428_162637\\results\\00bf11a1-bfaf-4a58-afc6-6f54df8e106c_1777364797519\\latex_recognition_results_20260428_162638.txt",
+      "latex_json_file": "20260428_162637\\results\\00bf11a1-bfaf-4a58-afc6-6f54df8e106c_1777364797519\\filename_latex_from_txt.json"
+    },
+    {
+      "image_name": "2b274d75-e9ea-4035-9682-d03d2bd4b259_1777364797519.png",
+      "original_size": [
+        427,
+        79
+      ],
+      "detection_count": 0,
+      "average_confidence": 0.0,
+      "total_confidence": 0.0,
+      "accuracy": 0.0,
+      "detections": [],
+      "result_image": "20260428_162637\\results\\2b274d75-e9ea-4035-9682-d03d2bd4b259_1777364797519\\test_results\\2b274d75-e9ea-4035-9682-d03d2bd4b259_1777364797519_preprocessed.jpg",
+      "preprocessed_image": "20260428_162637\\results\\2b274d75-e9ea-4035-9682-d03d2bd4b259_1777364797519\\2b274d75-e9ea-4035-9682-d03d2bd4b259_1777364797519_preprocessed.jpg",
+      "latex_txt_file": "20260428_162637\\results\\2b274d75-e9ea-4035-9682-d03d2bd4b259_1777364797519\\latex_recognition_results_20260428_162638.txt",
+      "latex_json_file": "20260428_162637\\results\\2b274d75-e9ea-4035-9682-d03d2bd4b259_1777364797519\\filename_latex_from_txt.json"
+    }
+  ],
+  "has_errors": false
+}

@@ -1,0 +1,40 @@
+{
+  "total_images": 1,
+  "total_detections": 1,
+  "overall_average_confidence": 0.8364386558532715,
+  "overall_accuracy": 83.64386558532715,
+  "results": [
+    {
+      "image_name": "0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002.png",
+      "original_size": [
+        842,
+        145
+      ],
+      "detection_count": 1,
+      "average_confidence": 0.8364386558532715,
+      "total_confidence": 0.8364386558532715,
+      "accuracy": 83.64386558532715,
+      "detections": [
+        {
+          "id": 1,
+          "class": "formula",
+          "confidence": 0.8364386558532715,
+          "bbox": [
+            813,
+            301,
+            1060,
+            383
+          ],
+          "crop_path": "20260428_182010\\results\\0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002\\cropped_objects\\0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002_preprocessed_original_1_formula_0.84.jpg",
+          "latex_formula": "\\left\\{\\begin{array}{ll}{{3(x-2)\\geqx-4({\\bar{1}})}}\\\\ {{{\\frac{2x+1}{3}}>x-1(\\bar{2})}}\\end{array}\\right.",
+          "latex_preview": null
+        }
+      ],
+      "result_image": "20260428_182010\\results\\0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002\\test_results\\0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002_preprocessed.jpg",
+      "preprocessed_image": "20260428_182010\\results\\0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002\\0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002_preprocessed.jpg",
+      "latex_txt_file": "20260428_182010\\results\\0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002\\latex_recognition_results_20260428_182012.txt",
+      "latex_json_file": "20260428_182010\\results\\0a0959ea-31ce-4589-ac6c-897dda2597ae_1777371610002\\filename_latex_from_txt.json"
+    }
+  ],
+  "has_errors": false
+}
