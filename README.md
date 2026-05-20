@@ -12,6 +12,7 @@
 ```bash
 # 安装依赖（conda环境下）
 conda env create -f environment.yml（环境所需依赖库很少，也可自行对照import安装）
-
-#运行程序
+```
+### 2.运行程序
+```bash
 python app.py #等待模型初始化后，访问http://127.0.0.1即可使用项目工具。
