@@ -1,2 +1,22 @@
-# -Latex-
-一个能对复杂环境下的数学公式进行识别并转换为Latesx代码的工具（课设项目，转换精准度有提高空间）。/A tool that can recognize and convert mathematical formulas in complex environments into LaTeX code (course project, with room for improvement in conversion accuracy).
+#-数学公式识别与LaTeX转换工具-
+一个能对复杂环境下的数学公式进行识别并转换为Latesx代码的工具（课设项目，转换精准度有提高空间）。
+一种能够在复杂环境中识别并转换数学公式为LaTeX代码的工具（课程项目，转换精度仍有提升空间）。
+
+---
+
+## 📌 项目简介
+本项目是一个课程设计，目标是实现一个工具，能够自动识别图片或文档中的数学公式，并将其转换为标准的 LaTeX 代码，便于直接在论文或报告中使用。
+
+## 🚀 快速开始
+### 1. 环境依赖
+```bash
+# 安装依赖（conda环境下）
+conda env create -f environment.yml（环境所需依赖库很少，也可自行对照import安装）
+
+#运行程序
+python app.py
+等待模型初始化后进入http://127.0.0.1即可使用项目工具。
+
+#工具界面展示
+<img width="1920" height="913" alt="image" src="https://github.com/user-attachments/assets/ef328fc1-aec7-4682-9fea-1aaac067d2fa" />
+
