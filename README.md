@@ -11,11 +11,11 @@
 ### 1. 环境依赖
 ```bash
 # 安装依赖（conda环境下）
-conda env create -f environment.yml（环境所需依赖库很少，也可自行对照import安装）
+conda env create -f environment.yml   #环境所需依赖库很少，也可自行对照import安装
 ```
 ### 2.运行程序
 ```bash
-python app.py #等待模型初始化后，访问http://127.0.0.1即可使用项目工具。
+python app.py   #等待模型初始化后，访问http://127.0.0.1即可使用项目工具。
 ```
 ### 3.界面展示
-![image[](<img width="1920" height="870" alt="image" src="https://github.com/user-attachments/assets/af0bcb62-6236-45d7-a1c3-b7aaacbf6037" />)](https://github.com/RroundeFK/-Latex-/blob/main/ImagesForReadme/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260520234150_99_17.png?raw=true)
+![图片[](<img width="1920" height="870" alt="图片" src="https://github.com/user-attachments/assets/af0bcb62-6236-45d7-a1c3-b7aaacbf6037" />)](https://github.com/RroundeFK/-Latex-/blob/main/ImagesForReadme/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260520234150_99_17.png?raw=true)
