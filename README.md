@@ -3,13 +3,31 @@
 A tool that can recognize and convert mathematical formulas in complex environments into LaTeX code (course project, with room for improvement in conversion accuracy).
 
 ## 目录
-1. [项目简介](#📌-项目简介)
-2. [快速开始](#🚀-快速开始)
-3. [使用教程](#📖-使用教程)
-4. [图片数据处理](#🗂️图片数据处理)
-5. [模型训练](#🤖模型训练)
+- [📌 项目简介](#📌-项目简介)
+- [🚀 快速开始](#🚀-快速开始)
+  - [1. 环境依赖](#1-环境依赖)
+  - [2. 运行程序](#2运行程序)
+  - [3. 界面展示](#3界面展示)
+- [📖 使用教程](#📖使用教程)
+  - [1. 上传图片](#1-上传图片)
+  - [2. 检测结果](#2-检测结果)
+  - [3. 统计会话摘要](#3-统计会话摘要)
+  - [4. 历史记录](#4-历史记录)
+- [🗂️ 图片数据处理](#🗂️图片数据处理)
+  - [阶段 1：笔画宽度变换（SWT）增强文字对比度](#阶段-1笔画宽度变换swt增强文字对比度)
+  - [阶段 2：图像二值化 + CLAHE 增强 + 形态学优化](#阶段-2图像二值化--clahe-增强--形态学优化)
+  - [阶段 3：高斯噪声画布填充与图片重复平铺](#阶段-3高斯噪声画布填充与图片重复平铺)
+- [🤖 模型训练](#🤖模型训练)
+  - [F1-Confidence 曲线](#1f1-confidence-曲线)
+  - [Precision-Confidence 曲线](#2precision-confidence-曲线)
+  - [Precision-Recall（PR）曲线](#3precision-recallpr曲线)
+  - [Recall-Confidence 曲线](#4recall-confidence-曲线)
+  - [归一化混淆矩阵](#5归一化混淆矩阵confusion-matrix-normalized)
+  - [锚框/实例分布热力图](#6锚框实例分布热力图)
+  - [数据集分布可视化](#7数据集分布可视化corner-plot)
+  - [训练验证损失与指标曲线](#8训练验证损失与核心指标曲线)
+  
 ---
-
 ## 📌 项目简介
 本项目是一个课程设计，目标是实现一个工具，能够自动识别图片或文档中的数学公式，并将其转换为标准的 LaTeX 代码，便于直接在论文或报告中使用。  
 This project is a course design aimed at developing a tool that can automatically recognize mathematical formulas in images or documents, and convert them into standard LaTeX code for direct use in academic papers or reports.
