@@ -2,6 +2,12 @@
 一个能对复杂环境下的数学公式进行识别并转换为Latesx代码的工具（课设项目，转换精准度有提高空间）。  
 A tool that can recognize and convert mathematical formulas in complex environments into LaTeX code (course project, with room for improvement in conversion accuracy).
 
+## 目录
+1. [项目简介](#📌-项目简介)
+2. [快速开始](#🚀-快速开始)
+3. [使用教程](#📖-使用教程)
+4. [图片数据处理](#🗂️图片数据处理)
+5. [模型训练](#🤖模型训练)
 ---
 
 ## 📌 项目简介
