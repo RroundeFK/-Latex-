@@ -97,3 +97,30 @@ python Canvas_Gauss_Fill.py
 ⑤结果输出：将填充后的画布保存为最终预处理图片，输出至指定目录。  
 
 ## 🤖模型训练
+```bash
+python train.py    #运行训练代码（workers、batch等参数可根据电脑性能调整）
+```
+### 1.F1-Confidence 曲线：
+<img width="2250" height="1500" alt="image" src="https://github.com/user-attachments/assets/f9434469-9919-401a-93de-d06f3700e3c9" />  
+
+### 2.Precision-Confidence 曲线：
+<img width="2250" height="1500" alt="BoxP_curve" src="https://github.com/user-attachments/assets/37cafd87-bf2e-41d6-8e6d-a63cdcfc861b" />  
+
+### 3.Precision-Recall（PR）曲线：  
+<img width="2250" height="1500" alt="BoxPR_curve" src="https://github.com/user-attachments/assets/5f00f3c2-1c17-403c-89b2-fb1a336c9bcd" />  
+
+### 4.Recall-Confidence 曲线：
+<img width="2250" height="1500" alt="BoxR_curve" src="https://github.com/user-attachments/assets/3e2469ca-407e-4721-8280-7bb943a4a9d6" />  
+
+### 5.归一化混淆矩阵（Confusion Matrix Normalized）：
+<img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/d0f83fcd-be1e-43b9-85b8-b3003a6e0515" />  
+
+### 6.锚框/实例分布热力图：
+<img width="1600" height="1600" alt="labels" src="https://github.com/user-attachments/assets/100ab09a-2ab6-4808-ba01-a1d217df0d41" />  
+
+### 7.数据集分布可视化（Corner Plot）：
+<img width="2000" height="2000" alt="labels_correlogram" src="https://github.com/user-attachments/assets/b5fb2825-e5ad-480c-a466-422f462c630a" />
+
+### 8.训练/验证损失与核心指标曲线:
+<img width="2400" height="1200" alt="image" src="https://github.com/user-attachments/assets/9b4e33ed-a179-4580-84b5-25c062340bc9" />  
+
