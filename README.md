@@ -2,6 +2,7 @@
 一个能对复杂环境下的数学公式进行识别并转换为Latesx代码的工具（课设项目，模型精度尚有提高空间，数据来源于2025讯飞开发者大赛）。  
 A tool capable of recognizing and converting mathematical formulas in complex environments into LaTeX code (course project, model accuracy has room for improvement, data sourced from the 2025 iFlytek Developer Competition).
 
+
 ## 目录
 - [📌 项目简介](#📌-项目简介)
 - [🚀 快速开始](#🚀-快速开始)
@@ -15,13 +16,13 @@ A tool capable of recognizing and converting mathematical formulas in complex en
   - [4. 历史记录](#4-历史记录)
 - [🗂️ 图片数据处理](#🗂️图片数据处理)
   - [阶段 1：笔画宽度变换（SWT）增强文字对比度](#阶段-1笔画宽度变换swt增强文字对比度)
-  - [阶段2：图像二值化 + CLAHE增强 + 形态学优化](#阶段-2图像二值化--clahe-增强--形态学优化)
+  - [阶段 2：图像二值化 + CLAHE 增强 + 形态学优化](#阶段-2图像二值化--clahe-增强--形态学优化)
   - [阶段 3：高斯噪声画布填充与图片重复平铺](#阶段-3高斯噪声画布填充与图片重复平铺)
 - [🤖 模型训练](#🤖模型训练)
-  - [F1-置信度曲线](#1f1-置信度曲线)
-  - [精确度-置信度曲线](#2精确度-置信度曲线)
-  - [精确度-召回率（PR）曲线](#3精确度-召回率pr曲线)
-  - [召回-置信度曲线](#4召回-置信度曲线)
+  - [F1-Confidence 曲线](#1f1-confidence-曲线)
+  - [Precision-Confidence 曲线](#2precision-confidence-曲线)
+  - [Precision-Recall（PR）曲线](#3precision-recallpr曲线)
+  - [Recall-Confidence 曲线](#4recall-confidence-曲线)
   - [归一化混淆矩阵](#5归一化混淆矩阵confusion-matrix-normalized)
   - [锚框/实例分布热力图](#6锚框实例分布热力图)
   - [数据集分布可视化](#7数据集分布可视化corner-plot)
