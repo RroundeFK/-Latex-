@@ -1,6 +1,6 @@
 # 数学公式识别与LaTeX转换工具
 一个能对复杂环境下的数学公式进行识别并转换为Latesx代码的工具（课设项目，模型精度尚有提高空间，数据来源于2025讯飞开发者大赛）。  
-一款能够识别并转换复杂数学公式的工具(课程项目，模型精度仍有提升空间，数据来源于2025科大讯飞开发者大赛).
+A tool capable of recognizing and converting mathematical formulas in complex environments into LaTeX code (course project, model accuracy has room for improvement, data sourced from the 2025 iFlytek Developer Competition).
 
 ## 目录
 - [📌 项目简介](#📌-项目简介)
