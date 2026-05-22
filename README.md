@@ -121,6 +121,7 @@ python Canvas_Gauss_Fill.py
 ⑤结果输出：将填充后的画布保存为最终预处理图片，输出至指定目录。  
 
 ## 🤖模型训练
+本次模型训练用了3998张处理后的图片数据（数据示例可查看Data目录）
 ```bash
 python train.py    #运行训练代码（workers、batch等参数可根据电脑性能调整）
 ```
