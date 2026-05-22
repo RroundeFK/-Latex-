@@ -5,7 +5,8 @@ A tool that can recognize and convert mathematical formulas in complex environme
 ---
 
 ## 📌 项目简介
-本项目是一个课程设计，目标是实现一个工具，能够自动识别图片或文档中的数学公式，并将其转换为标准的 LaTeX 代码，便于直接在论文或报告中使用。
+本项目是一个课程设计，目标是实现一个工具，能够自动识别图片或文档中的数学公式，并将其转换为标准的 LaTeX 代码，便于直接在论文或报告中使用。  
+This project is a course design aimed at developing a tool that can automatically recognize mathematical formulas in images or documents, and convert them into standard LaTeX code for direct use in academic papers or reports.
 
 ## 🚀 快速开始
 ### 1. 环境依赖
