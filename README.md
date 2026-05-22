@@ -54,11 +54,12 @@ python Image_SWT.py
 python Images_Binarization+CLAHE+Morphological+Laplaciou.py
 python Canvas_Gauss_Fill.py
 ```
-### 流程图  
-<img width="683" height="4404" alt="6a01427fea25da031f16bf9b45a17935" src="https://github.com/user-attachments/assets/4d7df71b-20c7-4104-97f1-fff0931c1528" />
 
 ### 阶段 1：笔画宽度变换（SWT）增强文字对比度
-#### 针对 “白底浅字” 类图片，通过 SWT 算法提取文字区域并增强文字亮度，核心目标是让浅淡文字更清晰。  
+#### 针对 “白底浅字” 类图片，通过 SWT 算法提取文字区域并增强文字亮度，核心目标是让浅淡文字更清晰。 
+#### 流程图：
+<img width="672" height="1856" alt="49a6414dfe5194a2c0f12ddf2e8ae11c" src="https://github.com/user-attachments/assets/7b438c11-953c-4d01-aeba-dfdfbe4f74f0" />  
+
 ①文件校验：检查输入图片路径是否存在，若不存在则抛出异常；读取二值化灰度图，校验图片是否可正常加载。  
 ②图像反转：将 “文字浅、背景白” 的原图反转为 “文字黑、背景白”，便于后续文字区域提取。  
 ③文字区域提取：通过像素阈值（<127）标记文字区域，生成文字 / 背景掩码。  
@@ -69,6 +70,9 @@ python Canvas_Gauss_Fill.py
 
 ### 阶段 2：图像二值化 + CLAHE 增强 + 形态学优化
 #### 对 SWT 处理后的图片做进一步画质优化，强化文字边缘、降低背景干扰。  
+#### 流程图：
+<img width="683" height="1464" alt="image" src="https://github.com/user-attachments/assets/171dda54-55e9-44ae-8322-ab7e3b6aa25a" />   
+
 ①参数配置：预设二值化阈值（190）、对比度增强系数（α=1.5，β=-50）、CLAHE 参数（clipLimit=1.0，网格 16×16）、形态学核（1×1 矩形）。  
 ②二值化处理：  
 &nbsp;&nbsp;&nbsp;&nbsp;将图片转为灰度图，通过convertScaleAbs增强对比度；  
@@ -78,7 +82,10 @@ python Canvas_Gauss_Fill.py
 ⑤结果输出：将优化后的图片保存至指定目录。  
 
 ### 阶段 3：高斯噪声画布填充与图片重复平铺  
-#### 将优化后的图片放置在自定义尺寸的高斯噪声画布上，通过上下重复平铺填满画布，模拟真实场景的背景噪声与重复纹理。    
+#### 将优化后的图片放置在自定义尺寸的高斯噪声画布上，通过上下重复平铺填满画布，模拟真实场景的背景噪声与重复纹理。  
+#### 流程图：
+<img width="652" height="1660" alt="ce15e7bf52f226a28548300425fda368" src="https://github.com/user-attachments/assets/9bc86347-364c-400c-8a0e-e6f82550593d" />   
+
 ①参数配置：预设高斯噪声参数（均值 255、标准差 40）、画布尺寸（高 622× 宽 2052）。  
 ②高斯噪声画布生成：基于正态分布生成指定尺寸的 RGB 噪声画布，像素值限制在 0-255 范围内。  
 ③图片居中计算：计算输入图片在画布中的水平 / 垂直居中偏移量，确保图片初始居中放置。  
