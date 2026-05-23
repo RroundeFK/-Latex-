@@ -121,8 +121,10 @@ python Canvas_Gauss_Fill.py
 &nbsp;&nbsp;&nbsp;&nbsp;所有绘制过程均做越界校验，避免像素溢出。  
 ⑤结果输出：将填充后的画布保存为最终预处理图片，输出至指定目录。  
 
-### 处理完图片展示： 
-<div align="center"><img width="2052" height="622" alt="image" src="https://github.com/user-attachments/assets/ab48ba02-995c-493a-b935-88be73ce5cf9" /></div>  
+### 处理图片展示： 
+<div align="center"><img width="2052" height="622" alt="image" src="https://github.com/user-attachments/assets/f6f1d684-55da-4372-a2ef-633064d0146e" /></div>  
+
+<div align="center"><img width="2052" height="622" alt="image" src="https://github.com/user-attachments/assets/a971cf69-a186-4645-be01-36c8daec483b" /></div>    
 
 
 ## 🤖模型训练
