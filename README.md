@@ -122,11 +122,9 @@ python Canvas_Gauss_Fill.py
 ⑤结果输出：将填充后的画布保存为最终预处理图片，输出至指定目录。  
 
 ### 处理图片展示： 
-<div align="center"><img width="2052" height="622" alt="image" src="https://github.com/user-attachments/assets/f6f1d684-55da-4372-a2ef-633064d0146e" /></div>  
-
-<div align="center"><img width="2052" height="622" alt="image" src="https://github.com/user-attachments/assets/a971cf69-a186-4645-be01-36c8daec483b" /></div>    
-
-
+<div align="center"><img width="2052" height="622" alt="0a71b2b2-3d43-49d6-bcac-8557efa5348a" src="https://github.com/user-attachments/assets/78ffc3ea-9734-4cb3-88ed-d44d9422a0e3" /></div>   
+<div align="center"><img width="2052" height="622" alt="0a11684b-c972-474d-bc16-5b005a7def8e" src="https://github.com/user-attachments/assets/92c98e65-19e4-49f6-8107-822750bf0eb0" /></div>   
+  
 ## 🤖模型训练
 本次模型训练用了3998张处理后的图片数据（数据示例可查看Data目录）
 ```bash
