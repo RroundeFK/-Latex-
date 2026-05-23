@@ -136,7 +136,7 @@ python train.py    #运行训练代码（workers、batch等参数可根据电脑
 <div align="center"><img width="2250" height="1500" alt="BoxPR_curve" src="https://github.com/user-attachments/assets/5f00f3c2-1c17-403c-89b2-fb1a336c9bcd" /></div>  
 
 ### 4.Recall-Confidence 曲线：
-<div align="center">img width="2250" height="1500" alt="BoxR_curve" src="https://github.com/user-attachments/assets/3e2469ca-407e-4721-8280-7bb943a4a9d6" /></div>  
+<div align="center"><img width="2250" height="1500" alt="BoxR_curve" src="https://github.com/user-attachments/assets/2a79b8c5-5c4e-448b-a243-ab6a93ef4ab8" /></div>  
 
 ### 5.归一化混淆矩阵（Confusion Matrix Normalized）：
 <div align="center"><img width="3000" height="2250" alt="confusion_matrix_normalized" src="https://github.com/user-attachments/assets/d0f83fcd-be1e-43b9-85b8-b3003a6e0515" /></div>   
