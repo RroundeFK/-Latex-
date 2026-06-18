@@ -27,6 +27,7 @@ A tool capable of recognizing and converting mathematical formulas in complex en
   - [锚框/实例分布热力图](#6锚框实例分布热力图)
   - [数据集分布可视化](#7数据集分布可视化corner-plot)
   - [训练验证损失与指标曲线](#8训练验证损失与核心指标曲线)
+- 📝 结语
   
 ---
 ## 📌 项目简介
@@ -152,5 +153,8 @@ python train.py    #运行训练代码（workers、batch等参数可根据电脑
 <div align="center"><img width="2000" height="2000" alt="labels_correlogram" src="https://github.com/user-attachments/assets/b5fb2825-e5ad-480c-a466-422f462c630a" /></div>  
 
 ### 8.训练/验证损失与核心指标曲线:
-<div align="center"><img width="2400" height="1200" alt="image" src="https://github.com/user-attachments/assets/9b4e33ed-a179-4580-84b5-25c062340bc9" /></div>  
+<div align="center"><img width="2400" height="1200" alt="image" src="https://github.com/user-attachments/assets/9b4e33ed-a179-4580-84b5-25c062340bc9" /></div>      
 
+      
+## 📝结语
+项目讲解到此结束，感谢观看，模型仍有优化空间，欢迎私信讨论。/ The End.
