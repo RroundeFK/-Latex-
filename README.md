@@ -4,8 +4,8 @@ A tool capable of recognizing and converting mathematical formulas in complex en
 
 
 ## 目录
-- [📌 项目简介](#📌-项目简介)
-- [🚀 快速开始](#🚀-快速开始)
+- 📌 项目简介
+- 🚀 快速开始
   - [1. 环境依赖](#1-环境依赖)
   - [2. 运行程序](#2运行程序)
   - [3. 界面展示](#3界面展示)
@@ -14,11 +14,11 @@ A tool capable of recognizing and converting mathematical formulas in complex en
   - [2. 检测结果](#2-检测结果)
   - [3. 统计会话摘要](#3-统计会话摘要)
   - [4. 历史记录](#4-历史记录)
-- [🗂️ 图片数据处理](#🗂️图片数据处理)
+- 🗂️ 图片数据处理
   - [阶段 1：笔画宽度变换（SWT）增强文字对比度](#阶段-1笔画宽度变换swt增强文字对比度)
   - [阶段 2：图像二值化 + CLAHE 增强 + 形态学优化](#阶段-2图像二值化--clahe-增强--形态学优化)
   - [阶段 3：高斯噪声画布填充与图片重复平铺](#阶段-3高斯噪声画布填充与图片重复平铺)
-- [🤖 模型训练](#🤖模型训练)
+- 🤖 模型训练
   - [F1-Confidence 曲线](#1f1-confidence-曲线)
   - [Precision-Confidence 曲线](#2precision-confidence-曲线)
   - [Precision-Recall（PR）曲线](#3precision-recallpr曲线)
